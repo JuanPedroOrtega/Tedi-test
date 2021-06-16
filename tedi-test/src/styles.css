@@ -1,3 +1,7 @@
 .shadow {
     box-shadow: 0px 2px 4px rgba(127, 124, 137, 0.227);
   }
+
+  body{
+    font-family:GillSansStd;
+  }

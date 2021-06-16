@@ -2,7 +2,7 @@
     <div class="box">
         <ul id="Menu" class="Menu shadow" >
             <li class="logo">
-                <img src="@/assets/tediber.svg" alt="tediber">
+                <img src="@/assets/images/tediber.svg" alt="tediber">
             </li>
             <li>
                 <span>NOS PRODUITS</span>
@@ -19,7 +19,7 @@
                 <span>AVIS</span>
             </li>
             <li class="ours">
-                <img src="@/assets/tedi.svg" alt="logo">
+                <img src="@/assets/images/tedi.svg" alt="logo">
             </li>
             <li>
                 <span>CONTACTEZ-NOUS</span>
@@ -34,7 +34,7 @@
                 <span>PUB TV</span>
             </li>
             <li class="bolsa">
-                <img src="@/assets/bag.svg" alt="bag">
+                <img src="@/assets/images/bag.svg" alt="bag">
             </li>    
         </ul>
     </div>
@@ -73,6 +73,9 @@ export default {
         top: 0px;
         width: 100%;
     }
+    ul{
+        list-style:none;
+    }
 	#Menu {
         list-style:none;
         display: flex;
@@ -84,9 +87,18 @@ export default {
     }
     
     .dropdown{
-        border: 0.1em solid black;
-        width: 10em;
-        margin-bottom: 1em;
+        position: relative;
+    }
+
+    .dropdown ul{
+        position: absolute;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .dropdown:hover ul{
+        max-height: 400px;
     }
     
     

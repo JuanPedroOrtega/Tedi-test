@@ -1,0 +1,29 @@
+[
+    {
+        "id":"1",
+        "name":"L’incroyable matelas Tediber",
+        "price":"750 €",
+        "taille":"160 x 200 cm",
+        "image":"/images/5.jpg",
+        "qté":"1"
+       
+     },
+     {
+        "id":"2",
+        "name":"L’incroyable OREILLER Tediber",
+        "price":"85",
+        "taille":"60 x 60 cm",
+        "image":"/images/oreiller.jpg",
+        "qté":"2"
+     },
+     {
+        "id":"3",
+        "name":"L’incroyable COUETTE Tediber",
+        "price":"210",
+        "taille":"240 x 220 cm",
+        "image":"/images/couette.jpg",
+        "qté":"1"
+     }
+]
+
+

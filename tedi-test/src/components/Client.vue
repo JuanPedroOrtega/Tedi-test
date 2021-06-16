@@ -1,6 +1,6 @@
 <template>
-    <div id="INFORMATIONS_SUR_LA">
-			<span>INFORMATIONS SUR LA LIVRAISON</span>
+    <div class="livraison">
+			<h4>INFORMATIONS SUR LA LIVRAISON</h4>
     </div> 
     <div id="Adresse_de_colletcte">
 		<span style="text-transform:uppercase;">Adresse de colletcte</span><br><span></span><br><span style="font-family:GillSansStd-Light;">POINT RELAIS57 rue Jean Pierre Timbaud<br/>PARIS<br/>75011<br/>France</span>
@@ -23,5 +23,25 @@ export default {
 </script>
 
 <style>
+    .livraison{
+        display: inline-block;
+        position: relative;
+}
 
+h4::after,h4::before{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 1px;
+    background-color: black;
+    top: 0.6em;
+} 
+h4::before{
+    top:30px;
+    left: -350px;
+}
+h4::after{
+    top:30px;
+    right: -350px;
+    }
 </style>
