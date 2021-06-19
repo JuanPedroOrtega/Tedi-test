@@ -2,23 +2,30 @@
     <div class="livraison">
 			<h4>INFORMATIONS SUR LA LIVRAISON</h4>
     </div> 
-    <div id="Adresse_de_colletcte">
-		<span style="text-transform:uppercase;">Adresse de colletcte</span><br><span></span><br><span style="font-family:GillSansStd-Light;">POINT RELAIS57 rue Jean Pierre Timbaud<br/>PARIS<br/>75011<br/>France</span>
-	</div>
-	<div id="vos_coordonnes_Shan">
-		<span style="text-transform:uppercase;">vos coordonnées</span><br><span></span><br><span style="font-family:GillSansStd-Light;">Shannon Honniball <br/>0664262272</span>
-	</div>
-	<div id="livraison_estime_je">
-		<span style="text-transform:uppercase;">livraison estimée</span><br><span></span><br><span style="font-family:GillSansStd-Light;">jeudi 9 mai 2019</span>
-	</div>
-	<div id="mode_de_livraison_li">
-		<span style="text-transform:uppercase;">mode de livraison</span><br><span></span><br><span style="font-family:GillSansStd-Light;">livraison standard en point relais</span>
-	</div>
+    <div class="client" v-for="item in items" v-bind:key="item.id">
+        <span>ADRESSE DE COLLETCTE {{item.collecte}}</span>
+        <span>VOS COORDONNÉES{{item.client}}</span>
+        <span>LIVRAISON ESTIMÉE{{item.estim}}</span>
+        <span>MODE DE LIVRAISON</span>
+    </div>
 </template>
 
 <script>
+import datos from "../assets/json/infoclient.json"
 export default {
-
+    name: 'Datos',
+    props: {
+        msg: String
+    },
+    
+    computed:{
+        items(){
+            return datos.map((item)=>{
+                return item;
+            })
+        }
+    }
+    
 }
 </script>
 
@@ -26,22 +33,31 @@ export default {
     .livraison{
         display: inline-block;
         position: relative;
-}
-
-h4::after,h4::before{
+    }
+    h4::after,h4::before{
     content: '';
     position: absolute;
-    width: 350px;
+    width: 300px;
     height: 1px;
     background-color: black;
     top: 0.6em;
-} 
-h4::before{
+    } 
+    h4::before{
     top:30px;
-    left: -350px;
-}
-h4::after{
-    top:30px;
-    right: -350px;
+    left: -330px;
     }
+    h4::after{
+    top:30px;
+    right: -330px;
+    }
+    .client{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 822px;
+    height: 152px;
+    box-shadow: 0px 2px 4px rgba(127, 124, 137, 0.227);
+    }
+
+    
 </style>
