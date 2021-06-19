@@ -1,13 +1,14 @@
 <template>
-    <div id="INFORMATIONS_de_paie">
-			<span>INFORMATIONS de paiement</span>
+    <div class="paiement-header">
+			<h4>INFORMATIONS DE PAIEMENT</h4>
 	</div> 
     <div>
         VISA
     </div>
-    <div id="total_commande">
-			<span>total commande</span>
-	</div>   
+	
+	<div class="paiement-info">
+		<h4>TOTAL COMMANDE</h4>
+	</div>  
     <div id="Sous-totale_Livraiso">
 		<span>Sous-totale<br/><br/>Livraison<br/></span><br><span style="font-family:GillSansStd;">TOTAL : </span>
 	</div>
@@ -26,5 +27,30 @@ export default {
 </script>
 
 <style>
+.paiement-header{
+        display: inline-block;
+        position: relative;
+	}
+.paiement-info{
+	display: inline-block;
+	position: relative;
+	}
+
+    h4::after,h4::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    top: 0.6em;
+    } 
+    h4::before{
+    top:30px;
+    left: -380px;
+    }
+    h4::after{
+    top:30px;
+    right: -380px;
+    }
 
 </style>

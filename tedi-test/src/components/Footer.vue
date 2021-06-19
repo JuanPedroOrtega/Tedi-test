@@ -1,4 +1,7 @@
 <template>
+	<div class="footer-header">
+		<h4>BESOIN D'AIDE ?</h4>
+	</div>
   <div id="FOIRE_AUX_QUESTIONS">
 		<span>FOIRE AUX QUESTIONS TEDIBER</span>
 	</div>
@@ -26,5 +29,26 @@ export default {
 </script>
 
 <style>
+	.footer-header{
+	display: inline-block;
+	position: relative;
+	}
 
+    h4::after,h4::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    top: 0.6em;
+    } 
+    h4::before{
+    top:30px;
+    left: -380px;
+    }
+    h4::after{
+    top:30px;
+    right: -380px;
+    
+	}
 </style>
