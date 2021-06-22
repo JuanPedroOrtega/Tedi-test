@@ -1,5 +1,4 @@
 <template>
-  
   <div class="commande" v-for="item in items" v-bind:key="item.id">
             <p>N° de commande : {{item.num}} </p>
             <p> Date de commande :{{item.date}}</p>
@@ -34,6 +33,5 @@ export default {
     left: -281px;
     flex-direction: column;
     padding-top: 100px;
-
 }
 </style>

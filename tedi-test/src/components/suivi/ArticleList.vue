@@ -42,7 +42,7 @@ ul{
     align-items: center;
     width: 422px;
     height: 152px;
-    box-shadow: 0px 2px 4px rgba(127, 124, 137, 0.227);
+    box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
     
 }
 img{

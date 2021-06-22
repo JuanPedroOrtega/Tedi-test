@@ -1,25 +1,25 @@
 <template>
 	<div class="footer-header">
-		<h4>BESOIN D'AIDE ?</h4>
+		<div class="line">&nbsp;</div>
+		<div class="leyende">INFORMATIONS DE PAIEMENT</div>
+		<div class="line">&nbsp;</div>
 	</div>
-  <div id="FOIRE_AUX_QUESTIONS">
-		<span>FOIRE AUX QUESTIONS TEDIBER</span>
-	</div>
-	<div id="ARTICLES_4">
-		<span>ARTICLES (4)</span>
-	</div>
-	<div id="Informations_sur_les">
-		<span>Informations sur les retours</span>
-	</div>
-	<div id="LA_GARANTIE_TEDIBER">
-		<span>LA GARANTIE TEDIBER</span>
-	</div>
-	<div id="reprise_de_lancienn">
-		<span>reprise de l’ancienne literie</span>
-	</div>
-	<div id="comment_faire_un_ret">
-		<span>comment faire un retour ?</span>
-	</div>
+	<nav class="footer-nav">
+		<div class="menu-footer">
+			<font-awesome-icon icon="fa-solid fa-angle-down" />
+			<a href="#">FOIRE AUX QUESTIONS TEDIBER</a>
+		</div>
+		<div class="menu-footer">
+			<a href="#">LA GARANTIE TEDIBER</a>
+		</div>
+		<div class="menu-footer">
+			<a href="#">REPRISE DE L’ANCIENNE LITERIE</a>
+		</div>
+		<div class="menu-footer">
+			<a href="#">COMMENT FAIRE UN RETOUR ?</a>
+		</div>
+	</nav>
+  
 </template>
 
 <script>
@@ -31,24 +31,27 @@ export default {
 <style>
 	.footer-header{
 	display: inline-block;
-	position: relative;
+	position: relative;	
+	padding-bottom: 20px;
 	}
-
-    h4::after,h4::before{
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 1px;
-    background-color: black;
-    top: 0.6em;
-    } 
-    h4::before{
-    top:30px;
-    left: -380px;
-    }
-    h4::after{
-    top:30px;
-    right: -380px;
-    
+	nav .menu-footer{
+        color: black;
+        position: relative;
+        text-align: center;
 	}
+	nav .menu-footer a{
+        color: inherit;
+        text-decoration: none;
+	}
+	.footer-nav a {
+    border-bottom: 1px solid #333;
+    color: rgba(255,255,255,.5);
+	display: block;
+	width: 980px;
+    font-size: 13px;
+    margin-bottom: 5px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+   
 </style>

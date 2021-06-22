@@ -5,3 +5,17 @@
   body{
     font-family:GillSansStd;
   }
+
+  .line {
+    margin:0px 20px;
+    width:335px;    
+    border-top:1px solid #999;
+    position: relative;
+    top:40px;
+    float:left;
+}
+.leyende {
+    padding-top: 30px;
+    font-weight:bold;
+    float:left;
+ }

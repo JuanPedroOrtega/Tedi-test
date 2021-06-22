@@ -1,22 +1,33 @@
 <template>
-    <div class="paiement-header">
-			<h4>INFORMATIONS DE PAIEMENT</h4>
+    <div class="line-head">
+		<div class="line">&nbsp;</div>
+		<div class="leyende">INFORMATIONS DE PAIEMENT</div>
+		<div class="line">&nbsp;</div>
+			
 	</div> 
-    <div>
+    <div class="paiement-header">
+		<img class="visa-logo" src="/images/visa.jpg" alt="/images/visa.jpg">
         VISA
     </div>
 	
 	<div class="paiement-info">
-		<h4>TOTAL COMMANDE</h4>
+		<div class="line">&nbsp;</div>
+		<div class="leyende">TOTAL COMMANDE</div>
+		<div class="line">&nbsp;</div>
 	</div>  
-    <div id="Sous-totale_Livraiso">
-		<span>Sous-totale<br/><br/>Livraison<br/></span><br><span style="font-family:GillSansStd;">TOTAL : </span>
-	</div>
-    <div id="Sous-totale_Livraiso">
-		<span>Sous-totale<br/><br/>Livraison<br/></span><br><span style="font-family:GillSansStd;">TOTAL : </span>
-	</div>
-	<div id="ID1130_GRATUITE_1130">
-		<span>1130<br/><br/>GRATUITE<br/></span><br><span style="font-family:GillSansStd;">1130</span>
+	<div class="resume">
+		<div>
+			<span>Sous-totale</span>
+			<span>1130</span>
+		</div>
+		<div>
+			<span>Livraison</span>
+			<span>GRATUITE</span>
+		</div>
+		<div>
+			<span>TOTAL</span>
+			<span>1130</span>
+		</div>
 	</div>
 </template>
 
@@ -27,30 +38,42 @@ export default {
 </script>
 
 <style>
+.line-head{
+	display: inline-block;
+	position: relative;	
+	padding-bottom: 20px;
+}
 .paiement-header{
-        display: inline-block;
-        position: relative;
-	}
+	display: inline-block;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: initial;
+	margin: auto;
+	width: 980px;
+	height: 35px;
+	box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
+}
 .paiement-info{
 	display: inline-block;
 	position: relative;
-	}
+	padding-bottom: 20px;
+}
+.visa-logo{
+	width: 30px;
+}
 
-    h4::after,h4::before{
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 1px;
-    background-color: black;
-    top: 0.6em;
-    } 
-    h4::before{
-    top:30px;
-    left: -380px;
-    }
-    h4::after{
-    top:30px;
-    right: -380px;
-    }
+.resume{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 980px;
+    height: 152px;
+    box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
+}
+
 
 </style>
