@@ -1,48 +1,47 @@
 <template>
-    <div class="box">
-        <ul id="Menu" class="Menu shadow" >
-            <li class="logo">
-                <img src="/images/tediber.svg" alt="tediber">
-            </li>
-            <li>
-                <span>NOS PRODUITS</span>
-                <ul class="dropdown">
-                    <li></li>
-                    <li></li>
-                </ul>
-                <button> </button>
-            </li>
-            <li>
-                <span>LE CONCEPT</span>
-            </li>
-            <li>
-                <span>AVIS</span>
-            </li>
-            <li class="ours">
-                <img src="/images/tedi.svg" alt="logo">
-            </li>
-            <li>
-                <span>CONTACTEZ-NOUS</span>
-            </li>
-            <li>
-                <span>MAG</span>
-            </li>
-            <li>
-                <span>MON COMPTE</span>
-            </li>
-            <li>
-                <span>PUB TV</span>
-            </li>
-            <li class="bolsa">
-                <img src="/images/bag.svg" alt="bag">
-            </li>    
-        </ul>
-    </div>
+    <nav class="navbar">
+        <div class="menu-item">
+            <img class="logo" src="/images/tediber.svg" alt="tediber">
+        </div>
+        <div class="menu-item">
+            <a class="dropdown" href="#">NOS PRODUITS</a>
+            <div class="arrow"></div>
+        </div>
+        <div class="menu-item">
+            <a href="#">LE CONCEPT</a>
+        </div>
+        <div class="menu-item">
+            <a href="">AVIS</a>
+        </div>
+        <div class="menu-item">
+            <img class="ours" src="/images/tedi.svg" alt="logo">
+        </div>
+        <div class="menu-item">
+            <a href="#">CONTACTEZ-NOUS</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">MAG</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">MON COMPTE</a>
+        </div>
+        <div class="menu-item">
+            <a href="#">PUB TV</a>
+        </div>
+        <div class="menu-item">
+            <img class="bolsa" src="/images/bag.svg" alt="bag">
+        </div>
+    </nav>
     
 </template>
 
 <script>
 export default {
+    name: 'navbar',
+    data(){
+        return{
+        }
+    }
 
 }
 </script>
@@ -63,55 +62,46 @@ export default {
 		box-sizing: border-box;
 		border: none;
     }
-    .box{
-        filter: drop-shadow(0px 2px 4px rgba(127, 124, 137, 0.227));
-		position: absolute;
-		overflow: visible;
-		width: 1212px;
-		height: 92px;
-		left: 0px;
-        top: 0px;
-        width: 100%;
-    }
-    ul{
-        list-style:none;
-    }
-
-    .ours:hover{
-        transform: rotate(45deg);
-    }
-
-	#Menu {
+    nav{
         list-style:none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
-        box-shadow: 0px 2px 4px rgba(127, 124, 137, 0.227);
+        width: 980px;
+        box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
+        margin: auto;
     }
 
-    span:hover{
-        color: goldenrod;
-    }
-    
-    .dropdown{
+    nav .menu-item{
+        color: black;
         position: relative;
+        text-align: center;
+    }
+    /*.navbar{
+        filter: drop-shadow(0px 2px 4px rgba(127, 124, 137, 0.227));
+		position: absolute;
+		overflow: visible;
+		width: 1212px;
+		
+		left: 0px;
+        top: 0px;
+        width: 100%;
+    }*/
+    nav .menu-item a{
+        color: inherit;
+        text-decoration: none;
+    }
+    nav .menu-item:hover{
+         color: goldenrod;
     }
 
-    .dropdown ul{
-        position: absolute;
-        max-height: 0px;
-        overflow: hidden;
-        transition: all 1s;
-    }
-
-    .dropdown:hover ul{
-        max-height: 400px;
+    .ours:hover{
+        transform: rotate(45deg);
     }
     
     .bolsa:hover{
         transform: rotate(25deg);
     }
-    
+
 </style>

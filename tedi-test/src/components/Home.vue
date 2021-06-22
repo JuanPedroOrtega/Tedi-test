@@ -1,7 +1,9 @@
 <template>
     <NavBar/>
      <div class="head">
-        <h4>SUIVI DE LA COMMANDE</h4>
+       <div class="line">&nbsp;</div>
+            <div class="leyende">SUIVI DE LA COMMANDE</div>
+            <div class="line">&nbsp;</div>
     </div>
     <div class="general-infos">
       <CommandeInfo/>
@@ -42,22 +44,6 @@ export default {
     position: relative;
 }
 
-h4::after,h4::before{
-    content: '';
-    position: absolute;
-    width: 350px;
-    height: 1px;
-    background-color: black;
-    top: 0.6em;
-} 
-h4::before{
-    top:70px;
-    left: -380px;
-}
-h4::after{
-    top:70px;
-    right: -380px;
-}
 
 
 .general-infos{
@@ -65,6 +51,8 @@ h4::after{
     justify-content: space-around;
     padding-top: 40px;
     padding-bottom: 50px;
+    margin: auto;
+    width: 980px;
 }
 
 

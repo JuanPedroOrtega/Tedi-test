@@ -1,12 +1,15 @@
 <template>
     <div class="livraison">
-			<h4>INFORMATIONS SUR LA LIVRAISON</h4>
+			<div class="line">&nbsp;</div>
+            <div class="leyende">INFORMATIONS SUR LA LIVRAISON</div>
+            <div class="line">&nbsp;</div>
     </div> 
     <div class="client" v-for="item in items" v-bind:key="item.id">
-        <span>ADRESSE DE COLLETCTE {{item.collecte}}</span>
-        <span>VOS COORDONNÉES{{item.client}}</span>
-        <span>LIVRAISON ESTIMÉE{{item.estim}}</span>
-        <span>MODE DE LIVRAISON</span>
+        <br>
+        <div class="client-div">ADRESSE DE COLLECTE<br><br> {{item.collecte}}</div>
+        <div class="client-div">VOS COORDONNÉES<br><br>{{item.client}}</div>
+        <div class="client-div">LIVRAISON ESTIMÉE<br><br>{{item.estim}}</div>
+        <div class="client-div">MODE DE LIVRAISON<br><br></div>
     </div>
 </template>
 
@@ -33,31 +36,26 @@ export default {
     .livraison{
         display: inline-block;
         position: relative;
-    }
-    h4::after,h4::before{
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 1px;
-    background-color: black;
-    top: 0.6em;
-    } 
-    h4::before{
-    top:30px;
-    left: -330px;
-    }
-    h4::after{
-    top:30px;
-    right: -330px;
+        padding-bottom: 20px;
     }
     .client{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 822px;
-    height: 152px;
-    box-shadow: 0px 2px 4px rgba(127, 124, 137, 0.227);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        width: 980px;
+        height: 152px;
+        box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
     }
 
+    div .client-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: auto;
+        border-right: thin solid black ;
+    }
+   
     
 </style>
