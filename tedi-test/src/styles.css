@@ -13,9 +13,25 @@
     position: relative;
     top:40px;
     float:left;
+    font-weight: bold;
 }
 .leyende {
     padding-top: 30px;
     font-weight:bold;
     float:left;
+ }
+
+ @media screen and (max-width: 600px){
+   body{
+     display: flex;
+   }
+   .line{
+     max-width: 280px;
+   }
+   .general-infos{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+
  }

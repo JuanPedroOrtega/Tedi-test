@@ -17,16 +17,13 @@
 	</div>  
 	<div class="resume">
 		<div>
-			<span>Sous-totale</span>
-			<span>1130</span>
+			<span>Sous-totale <span>1130</span></span>	
 		</div>
 		<div>
-			<span>Livraison</span>
-			<span>GRATUITE</span>
+			<span>Livraison <span>GRATUITE</span></span>	
 		</div>
 		<div>
-			<span>TOTAL</span>
-			<span>1130</span>
+			<span>TOTAL <span>1130</span></span>
 		</div>
 	</div>
 </template>
@@ -74,6 +71,15 @@ export default {
     height: 152px;
     box-shadow: 0px 2px 4px 2px rgba(127, 124, 137, 0.227);
 }
+
+ @media screen and (max-width: 600px){
+	.paiement-header{
+		width: 70%;
+	}
+	.resume{
+		width: 70%;
+	}
+ }
 
 
 </style>

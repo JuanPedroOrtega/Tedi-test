@@ -44,8 +44,6 @@ export default {
     position: relative;
 }
 
-
-
 .general-infos{
     display: flex;
     justify-content: space-around;
@@ -54,8 +52,6 @@ export default {
     margin: auto;
     width: 980px;
 }
-
-
 h3 {
   margin: 40px 0 0;
 }
