@@ -9,7 +9,7 @@
         <div class="client-div">ADRESSE DE COLLECTE<br><br> {{item.collecte}}</div>
         <div class="client-div">VOS COORDONNÉES<br><br>{{item.client}}</div>
         <div class="client-div">LIVRAISON ESTIMÉE<br><br>{{item.estim}}</div>
-        <div class="client-div">MODE DE LIVRAISON<br><br></div>
+        <div class="client-div">MODE DE LIVRAISON<br><br>livraison standard en point relais</div>
     </div>
 </template>
 
@@ -55,6 +55,20 @@ export default {
         justify-content: space-around;
         max-width: auto;
         border-right: thin solid black ;
+    }
+    @media screen and (max-width: 600px){
+        .client{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%; 
+            height: 400px;
+        }
+        .client .client-div{
+            border-right: none;
+            border-bottom:thin solid black;
+            padding-bottom: 25px;
+           }
     }
    
     

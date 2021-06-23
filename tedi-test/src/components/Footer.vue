@@ -1,7 +1,7 @@
 <template>
 	<div class="footer-header">
 		<div class="line">&nbsp;</div>
-		<div class="leyende">INFORMATIONS DE PAIEMENT</div>
+		<div class="leyende">BESOIN D'AIDE ?</div>
 		<div class="line">&nbsp;</div>
 	</div>
 	<nav class="footer-nav">
