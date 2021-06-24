@@ -2,7 +2,10 @@
     <NavBar/>
      <div class="head">
        <div class="line">&nbsp;</div>
-            <div class="leyende">SUIVI DE LA COMMANDE</div>
+            <div class="leyende">
+              SUIVI DE LA COMMANDE
+              <img src="/images/zigzag.svg" alt="/images/zigzag.svg">
+              </div>
             <div class="line">&nbsp;</div>
     </div>
     <div class="general-infos">
@@ -46,7 +49,7 @@ export default {
 
 .general-infos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 50px;
     margin: auto;

@@ -16,6 +16,8 @@
     font-weight: bold;
 }
 .leyende {
+    display: flex;
+    flex-direction: column;
     padding-top: 30px;
     font-weight:bold;
     float:left;
@@ -24,6 +26,7 @@
  @media screen and (max-width: 600px){
    body{
      display: flex;
+     width: 50%;
    }
    .line{
      max-width: 280px;
