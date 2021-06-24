@@ -1,7 +1,10 @@
 <template>
     <div class="line-head">
 		<div class="line">&nbsp;</div>
-		<div class="leyende">INFORMATIONS DE PAIEMENT</div>
+		<div class="leyende">
+			INFORMATIONS DE PAIEMENT
+			<img src="/images/zigzag.svg" alt="/images/zigzag.svg">	
+		</div>
 		<div class="line">&nbsp;</div>
 			
 	</div> 
@@ -12,7 +15,10 @@
 	
 	<div class="paiement-info">
 		<div class="line">&nbsp;</div>
-		<div class="leyende">TOTAL COMMANDE</div>
+		<div class="leyende">
+			TOTAL COMMANDE
+			<img src="/images/zigzag.svg" alt="/images/zigzag.svg">
+		</div>
 		<div class="line">&nbsp;</div>
 	</div>  
 	<div class="resume">

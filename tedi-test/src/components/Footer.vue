@@ -1,12 +1,14 @@
 <template>
 	<div class="footer-header">
 		<div class="line">&nbsp;</div>
-		<div class="leyende">BESOIN D'AIDE ?</div>
+		<div class="leyende">
+			BESOIN D'AIDE ?
+			<img src="/images/zigzag.svg" alt="/images/zigzag.svg">
+		</div>
 		<div class="line">&nbsp;</div>
 	</div>
 	<nav class="footer-nav">
 		<div class="menu-footer">
-			<font-awesome-icon icon="fa-solid fa-angle-down" />
 			<a href="#">FOIRE AUX QUESTIONS TEDIBER</a>
 		</div>
 		<div class="menu-footer">

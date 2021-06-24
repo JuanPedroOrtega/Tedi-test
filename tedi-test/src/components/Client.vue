@@ -1,7 +1,10 @@
 <template>
     <div class="livraison">
 			<div class="line">&nbsp;</div>
-            <div class="leyende">INFORMATIONS SUR LA LIVRAISON</div>
+            <div class="leyende">
+                INFORMATIONS SUR LA LIVRAISON
+                <img src="/images/zigzag.svg" alt="/images/zigzag.svg">
+            </div>
             <div class="line">&nbsp;</div>
     </div> 
     <div class="client" v-for="item in items" v-bind:key="item.id">
